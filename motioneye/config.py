@@ -1611,7 +1611,7 @@ def _set_default_motion_camera(camera_id, data):
     data.setdefault('target_dir', settings.MEDIA_PATH)
     
     data.setdefault('stream_localhost', False)
-    data.setdefault('stream_port', int('808' + str(camera_id)))
+    data.setdefault('stream_port', settings.MOTION_INITIAL_STREAMING_PORT + camera_id)
     data.setdefault('stream_maxrate', 5)
     data.setdefault('stream_quality', 85)
     data.setdefault('stream_motion', False)

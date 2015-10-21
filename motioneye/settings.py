@@ -63,6 +63,9 @@ MOTION_CONTROL_LOCALHOST = True
 # the TCP port that motion HTTP control interface listens on
 MOTION_CONTROL_PORT = 7999
 
+# the initial port to use for netcam streaming. Additional cameras will increment sequentially
+MOTION_INITIAL_STREAMING_PORT = 8080
+
 # interval in seconds at which motionEye checks the SMB mounts
 MOUNT_CHECK_INTERVAL = 300
 
